@@ -1,0 +1,4 @@
+# Unexpected Pointer Behavior in C
+This repository demonstrates a common error related to pointer behavior in C. The original code modifies a pointer to point to a different variable after the initial variable is changed. It unexpectedly outputs 20 after changing the value through the pointer and points to a different variable. The solution provided fixes this behavior to get the expected output.
+## Bug Description
+The core issue lies in how pointers are handled when reassigned. The code first modifies the value of x using a pointer, then changes the pointer's target to y, and modifies y's value. However, the value of x remains unaffected.
